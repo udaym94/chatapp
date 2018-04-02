@@ -1,0 +1,19 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "Chating app Created with Socket.io",
+  "main": "app",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "mustache": "^2.3.0",
+    "npm": "^5.8.0",
+    "pug": "^2.0.3",
+    "socket.io": "^2.0.4"
+  }
+}
