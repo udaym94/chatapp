@@ -4,7 +4,8 @@
   "description": "Chating app Created with Socket.io",
   "main": "app",
   "scripts": {
-    "test": "node app.js"
+    "test": "node app.js",
+    "start": "node server/app.js"
   },
   "author": "",
   "license": "ISC",
