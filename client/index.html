@@ -58,6 +58,7 @@
       width: 33%;
       left: 33%;
       position: relative;
+      display: none;
     }
     .chats{
       min-height: 85vh;
@@ -67,8 +68,10 @@
     .weclomemsg{
       text-align: center;
       padding-top: 0.5%;
-      margin-top: 1;
-      display: inline;
+      margin-top: 1%;
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
       background-color: #96d7b5;
       border-radius: 10px;
       padding: 4px 14px;
@@ -89,7 +92,7 @@
       padding: 2px 4px;
       display: inline;
       position: relative;
-      float: right;
+      float: left;
     }
     .msgtime{
       font-size: 8px;
@@ -97,6 +100,12 @@
     .from{
       font-size: 8px;
       font-weight: bold;
+    }
+    .sendMessage .form-group:nth-of-type(1){
+      width: 90%;
+    }
+    .sendMessage .form-group:nth-of-type(1) .form-control{
+      width: 100%;
     }
   </style>
   <body>
