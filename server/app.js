@@ -46,12 +46,12 @@ io.on('connection', (socket) => {
     // io.emit('') //Could have used io.emit but won't cause zigzag pattern
     socket.broadcast.emit('newMessage', {
       name:data.name,
-      message: '<div class="leftChat"><div class="from"><div class="msgtime"></div>'+ data.name +'</div>'+ data.message +'</div>',
+      message: '<div class="leftChat"><span><div class="from"><div class="msgtime"></div>'+ data.name +'</div>'+ data.message +'</span></div>',
       joinedAt: new Date().getTime()
     })
     socket.emit('newMessage', {
       name:data.name,
-      message: '<div class="rightChat"><div class="from"><div class="msgtime"></div>'+ data.name +'</div>'+ data.message +'</div>',
+      message: '<div class="rightChat"><span><div class="from"><div class="msgtime"></div>'+ data.name +'</div>'+ data.message +'</span></div>',
       joinedAt: new Date().getTime()
     })
   });
